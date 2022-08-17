@@ -1,0 +1,52 @@
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loader {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+}
+
+.loader span {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50px;
+    background: white;
+    animation: loader 4s infinite normal;
+}
+
+.loader span:nth-of-type(2) {
+    animation-delay: 1s;
+    background: var(--secondary);
+}
+
+.loader span:nth-of-type(3) {
+    animation-delay: 2s;
+    background: white;
+}
+
+.loader.resting span {
+    animation: none;
+}
+
+@keyframes loader {
+    0% {
+        width: 10px;
+        height: 10px;
+    }
+
+    50% {
+        width: 24px;
+        height: 24px;
+    }
+
+    100% {
+        width: 10px;
+        height: 10px;
+    }
+}

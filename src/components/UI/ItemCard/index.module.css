@@ -1,0 +1,29 @@
+.container {
+    margin: 20px 0;
+    padding: 0 20px;
+    position: relative;
+}
+
+.imageContainer {
+    height: 200px;
+}
+
+.image {
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.imageContainer.sm{
+    height: 100px;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+    width: calc(100% - 60px);
+    mix-blend-mode: difference;
+}
