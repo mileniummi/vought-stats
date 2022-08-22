@@ -50,7 +50,7 @@
 }
 
 .button.white:hover{
-    color: var(--secondary);
+    color: var(--bg-primary);
 }
 
 /**/

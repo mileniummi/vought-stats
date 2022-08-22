@@ -76,10 +76,6 @@ body {
     --bg-primary: #040410;
     --line-primary: #525252;
     --text-color: #c2c5c7;
-    --text-hover: #b21743;
-
-    --secondary: #b40e4c;
-    --secondary-hover: #7e0c38;
 }
 
 .container {

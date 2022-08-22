@@ -1,7 +1,7 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
 import { NavLink } from "./NavLink";
 import styles from "/src/components/Navbar/index.module.css";
-import Switch from "react-switch";
+import ThemeChanger from "@/components/UI/ThemeChanger";
 
 const pagesLeft = [
   { href: "/", name: "Home" },
@@ -10,10 +10,7 @@ const pagesLeft = [
 
 const pagesRight = [{ href: "/leaderboard", name: "Leaderboard" }];
 
-const Navbar: React.FC<{
-  theme: string;
-  setTheme: Dispatch<SetStateAction<string>>;
-}> = ({ theme, setTheme }) => {
+const Navbar: React.FC = () => {
   return (
     <div className="container">
       <div className={styles.container}>
@@ -30,12 +27,7 @@ const Navbar: React.FC<{
               {page.name}
             </NavLink>
           ))}
-          <Switch
-            onChange={() =>
-              setTheme((prevState) => (prevState === "dark" ? "light" : "dark"))
-            }
-            checked={theme === "dark"}
-          />
+          <ThemeChanger />
         </div>
       </div>
     </div>

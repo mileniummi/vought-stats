@@ -9,8 +9,9 @@ const Landing = () => {
     <div className={styles.container}>
       <h1 className={styles.info}>
         <div className={styles.title}>
-          Vote. <br /> <span className={styles.secondary}>&</span> <br /> See
-          Statistics.
+          Vote. <br />
+          <span className={styles.secondary}>&</span>
+          <br /> See Statistics.
         </div>
         <Button variant="white">
           <NavLink href={"/vote"}>Vote</NavLink>
