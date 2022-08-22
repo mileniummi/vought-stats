@@ -3,8 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['media.rawg.io']
-  }
-}
+    domains: ["media.rawg.io"],
+  },
+};
 
-module.exports = nextConfig
+const withTM = require("next-transpile-modules")(["react-icons"]);
+
+module.exports = withTM(nextConfig);
