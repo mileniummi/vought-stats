@@ -1,7 +1,7 @@
 .button {
     border: 0;
     padding: 15px 50px;
-    color: white;
+    color: var(--text-color);
     font-family: 'Epilogue', sans-serif;
     font-weight: 600;
     position: relative;
@@ -36,17 +36,17 @@
 /*color scheme*/
 
 .button.white {
-    background: linear-gradient(to left, transparent 50%, white 50%) right;
-    border: 2px solid white;
+    background: linear-gradient(to left, transparent 50%, var(--text-color) 50%) right;
+    border: 2px solid var(--text-color);
     background-size: 200%;
 }
 
 .button.white:after{
-    border: 2px solid white;
+    border: 2px solid var(--text-color);
 }
 
 .button.white:hover:after{
-    border: 2px solid white;
+    border: 2px solid var(--text-color);
 }
 
 .button.white:hover{

@@ -10,6 +10,7 @@
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
   },
   "dependencies": {
+    "@formkit/auto-animate": "^1.0.0-beta.1",
     "@prisma/client": "^4.2.1",
     "@trpc/client": "^9.27.0",
     "@trpc/next": "^9.27.0",
@@ -24,6 +25,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-query": "^3.39.2",
+    "react-switch": "^7.0.0",
+    "use-local-storage": "^2.3.6",
     "zod": "^3.18.0"
   },
   "devDependencies": {

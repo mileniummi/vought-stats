@@ -7,10 +7,10 @@ body {
 }
 
 @font-face {
-  font-family: "Epilogue";
-  src: url("../../fonts/epilogue/Epilogue-ExtraLight.ttf");
-  font-weight: 200;
-  font-style: normal;
+    font-family: "Epilogue";
+    src: url("../../fonts/epilogue/Epilogue-ExtraLight.ttf");
+    font-weight: 200;
+    font-style: normal;
 }
 
 @font-face {
@@ -58,12 +58,21 @@ a {
     margin: 0;
 }
 
-body{
+body {
     background: var(--bg-primary);
     height: 100%;
 }
 
 :root {
+    --bg-primary: white;
+    --line-primary: black;
+    --text-color: black;
+    --text-hover: #b21743;
+
+    --secondary: #b40e4c;
+    --secondary-hover: #7e0c38;
+}
+[data-theme='dark'] {
     --bg-primary: #040410;
     --line-primary: #525252;
     --text-color: #c2c5c7;
@@ -80,6 +89,9 @@ body{
     color: var(--text-color);
 }
 
+.bounce {
+    animation: bounce 1s linear;
+}
 
 
 @media (prefers-color-scheme: dark) {
@@ -90,5 +102,23 @@ body{
     body {
         color: white;
         background: black;
+    }
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(-200px);
+    }
+    20%, 50%, 80%, to {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    70% {
+        transform: translateY(-15px);
+    }
+    90% {
+        transform: translateY(-5px);
     }
 }

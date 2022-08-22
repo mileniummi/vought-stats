@@ -1,0 +1,26 @@
+.title {
+    margin: 20px 0 0 20px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.title:after {
+    height: 2px;
+    content: "";
+    width: calc(100% - 25px);
+    background: var(--text-hover);
+    animation: expandLine .4s linear;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+@keyframes expandLine {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: calc(100% - 20px);
+    }
+}

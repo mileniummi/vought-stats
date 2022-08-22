@@ -1,0 +1,29 @@
+.container {
+    margin-top: 30px;
+    width: 100%;
+    background: url("landing-bg.png") right top no-repeat;
+    height: 630px;
+    background-size: 80%;
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    left: 50px;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+
+.secondary {
+    color: var(--secondary);
+}

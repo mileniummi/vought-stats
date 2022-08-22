@@ -13,7 +13,7 @@ interface ItemCardProps {
 
 const ItemCard: React.FC<ItemCardProps> = ({ image, children, href, size }) => {
   const body = (
-    <div className={styles.container}>
+    <div className={classNames(styles.container, size !== "sm" && "bounce")}>
       <div
         className={classNames(
           styles.imageContainer,

@@ -1,12 +1,12 @@
-import type {NextPage} from 'next'
+import type { NextPage } from "next";
+import Landing from "@/components/Landing";
 
 const Home: NextPage = () => {
-
-    return <>
-        <div>
-            <p>Welcome to Home Page!</p>
-        </div>
+  return (
+    <>
+      <Landing />
     </>
-}
+  );
+};
 
-export default Home
+export default Home;

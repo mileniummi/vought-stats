@@ -32,6 +32,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@formkit/auto-animate@^1.0.0-beta.1":
+  version "1.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@formkit/auto-animate/-/auto-animate-1.0.0-beta.1.tgz#aec5fd2ea5e499ceb7eb117c7fd1217a7f100748"
+  integrity sha512-I3OWOBaPZKSJL4bsooXI8kC3q7bcgibD2oML0P/Lir6MnbvUe/0/7EH8br024juvM/Ulm9C9xGx9CJUQYrOWSA==
+
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.4.tgz#01e7366e57d2ad104feea63e72248f22015c520c"
@@ -1612,7 +1617,7 @@ prisma@^4.2.1:
   dependencies:
     "@prisma/engines" "4.2.1"
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -1662,6 +1667,13 @@ react-ssr-prepass@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/react-ssr-prepass/-/react-ssr-prepass-1.5.0.tgz#bc4ca7fcb52365e6aea11cc254a3d1bdcbd030c5"
   integrity sha512-yFNHrlVEReVYKsLI5lF05tZoHveA5pGzjFbFJY/3pOqqjGOmMmqx83N4hIjN2n6E1AOa+eQEUxs3CgRnPmT0RQ==
+
+react-switch@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/react-switch/-/react-switch-7.0.0.tgz#400990bb9822864938e343ed24f13276a617bdc0"
+  integrity sha512-KkDeW+cozZXI6knDPyUt3KBN1rmhoVYgAdCJqAh7st7tk8YE6N0iR89zjCWO8T8dUTeJGTR0KU+5CHCRMRffiA==
+  dependencies:
+    prop-types "^15.7.2"
 
 react@18.2.0:
   version "18.2.0"
@@ -1932,6 +1944,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-local-storage@^2.3.6:
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/use-local-storage/-/use-local-storage-2.3.6.tgz#11058465143aa7537556af482b21c6b1f77a78a6"
+  integrity sha512-OJQHWYbH2M5mMaSY6uYIbfzOm7eVz1fBYFw1wqQurCR2+gQb+FjVt0KzzDAsgTOSEUNVAbaiJ0I4WcNjRn7u5w==
 
 use-sync-external-store@1.2.0:
   version "1.2.0"

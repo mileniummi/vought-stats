@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { getVoteOptions } from "@/utils/getRandomIndex";
 import Card from "@/components/Vote/GamesVote/Card";
-import styles from "@/styles/Vote.module.css";
+import styles from "@/components/Vote/index.module.css";
 import { trpc } from "@/utils/trpc";
 import Button from "@/components/UI/Button";
-// import { BsArrowRight } from "react-icons/all";
+import { BsArrowRight } from "react-icons/all";
 
 const GamesVote = () => {
   const [ids, updateIds] = useState(() => getVoteOptions());
@@ -32,7 +32,7 @@ const GamesVote = () => {
       </div>
       <Button onClick={skip} variant="white">
         Skip
-        {/*<BsArrowRight size={20} color="inherit"></BsArrowRight>*/}
+        <BsArrowRight size={20} color="inherit"></BsArrowRight>
       </Button>
     </div>
   );
